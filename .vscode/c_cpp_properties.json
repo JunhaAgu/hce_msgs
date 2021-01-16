@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/junhakim/hce_ws/devel/include/**",
+        "/home/junhakim/msgs_ws/devel/include/**",
+        "/home/junhakim/calibration_ws/devel/include/**",
+        "/home/junhakim/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/junhakim/msgs_ws/src/lidar_visual_reconstructor/include/**",
+        "/home/junhakim/calibration_ws/src/multi_lidar_calibration/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

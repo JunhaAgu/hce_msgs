@@ -1,0 +1,11 @@
+Header header
+
+---
+Header header # SE(3) (from lidar0 (cabin) to lidar1 (boom))
+float32 vx
+float32 vy
+float32 vz
+float32 wx
+float32 wy
+float32 wz
+bool succeeded
