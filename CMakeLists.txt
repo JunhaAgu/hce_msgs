@@ -20,6 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 )
 
+#messages
 add_message_files(
    FILES
    controlInputsStamped.msg 
@@ -27,6 +28,7 @@ add_message_files(
    packetsToExcavator.msg
 )
 
+#services
 add_service_files(
   FILES
   profilePolynomialStamped.srv
