@@ -42,7 +42,6 @@ generate_messages(
   sensor_msgs
 )
 
-
 catkin_package(
   DEPENDS 
   #Eigen
