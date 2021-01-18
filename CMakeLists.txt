@@ -27,6 +27,13 @@ add_message_files(
    controlInputsStamped.msg 
    packetsFromExcavator.msg
    packetsToExcavator.msg
+   ExMeasureStamped.msg
+   ExMeasure.msg
+   ExPressure.msg
+   ExAngle.msg
+   ExVelocity.msg
+   Predictions.msg
+   StateInput.msg
 )
 
 #services
