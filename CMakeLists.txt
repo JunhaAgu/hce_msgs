@@ -46,6 +46,7 @@ add_service_files(
   FILES
   CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
   CallReconstructor.srv
+  CallDumpDetector.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
