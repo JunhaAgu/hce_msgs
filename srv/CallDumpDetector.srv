@@ -1,0 +1,10 @@
+# Request
+Header header
+sensor_msgs/Image img0 # boom upper camera
+sensor_msgs/Image img1 # boom lower camera
+
+---
+# Response
+Header header
+bool success
+geometry_msgs/Point[] tag_centers # 4개 3차원 점.

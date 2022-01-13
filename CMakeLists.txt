@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(hce_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+add_compile_options(-std=c++14)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -19,6 +19,9 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   message_filters
   image_transport
+
+  excavator_msgs
+  vision_msgs
 )
 
 #messages
@@ -34,15 +37,16 @@ add_message_files(
    ExVelocity.msg
    Predictions.msg
    StateInput.msg
+   DataCamlidarStamped.msg
+   DataToReconstructor.msg
 )
 
 #services
 add_service_files(
   FILES
-  profilePolynomialStamped.srv
-  profilePointsStamped.srv
-  lidarImageDataStamped.srv
-  relativeLidarPoseStamped.srv
+  CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
+  CallReconstructor.srv
+  CallDumpDetector.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -50,10 +54,13 @@ generate_messages(
   DEPENDENCIES
   std_msgs
   sensor_msgs
+
+  excavator_msgs
+  vision_msgs
 )
 
 catkin_package(
   DEPENDS 
   #Eigen
-  CATKIN_DEPENDS message_runtime roscpp message_filters
+  CATKIN_DEPENDS message_runtime roscpp message_filters excavator_msgs vision_msgs
 )
