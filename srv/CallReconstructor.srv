@@ -1,8 +1,32 @@
-# Request
+# Request from GCS to Reconstructor
 Header header
-string mode
+uint8 MODE_STANDBY=0
+uint8 MODE_TRANSMIT=1
+uint8 MODE_ORDER_SINGLEVIEW=2
+uint8 MODE_ORDER_MULTIVIEW=3
+uint8 MODE_ORDER_SINGLELIDAR=4
+uint8 mode # above modes
+
+# For 'MODE_STANDBY'
+uint32 n_data # the number of data to be transmitted.
+
+# For 'MODE_TRANSMIT'
+hce_msgs/DataToReconstructor data
+uint32 index_gcs
+
+# For 'MODE_ORDER_SINGLEVIEW'
 
 ---
-# Response
+# Response from Reconstructor to GCS
 Header header
+geometry_msgs/PoseStamped pose_boomcam
+bool success
+
+# Response of 'MODE_STANDBY'
+# none
+
+# Response of 'MODE_TRANSMIT'
+uint32 index_recon
+
+# Response of 'MODE_ORDER_X' 
 # 3-D point maps

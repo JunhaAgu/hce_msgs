@@ -38,12 +38,14 @@ add_message_files(
    Predictions.msg
    StateInput.msg
    DataCamlidarStamped.msg
+   DataToReconstructor.msg
 )
 
 #services
 add_service_files(
   FILES
-  CamlidarStamped.srv
+  CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
+  CallReconstructor.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
