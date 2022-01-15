@@ -38,15 +38,17 @@ add_message_files(
    Predictions.msg
    StateInput.msg
    DataCamlidarStamped.msg
+   DataLidar.msg
    DataToReconstructor.msg
 )
 
 #services
 add_service_files(
   FILES
-  CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
-  CallReconstructor.srv
-  CallDumpDetector.srv
+  CallCamlidar.srv # to get lidar-image data from 'hce_camlidar' module
+  CallReconstructor.srv # to reconstructor
+  CallDumpDetector.srv # to dump detector
+  CallGlobalPlanner.srv # to global planner
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -54,7 +56,7 @@ generate_messages(
   DEPENDENCIES
   std_msgs
   sensor_msgs
-
+  
   excavator_msgs
   vision_msgs
 )

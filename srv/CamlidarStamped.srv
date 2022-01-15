@@ -1,7 +1,0 @@
-Header header
-uint32 request_type
-uint32 req_idx
-
----
-DataCamlidarStamped data
-geometry_msgs/PoseStamped pose_boomcam
