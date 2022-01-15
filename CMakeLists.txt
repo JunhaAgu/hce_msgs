@@ -40,6 +40,7 @@ add_message_files(
    DataCamlidarStamped.msg
    DataLidar.msg
    DataToReconstructor.msg
+   Data3dmap.msg
 )
 
 #services
