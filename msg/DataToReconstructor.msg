@@ -11,8 +11,8 @@ hce_msgs/DataLidar lidar0
 hce_msgs/DataLidar lidar1
 
 # Real-time pose of sensors
-geometry_msgs/Pose T_BC_boomupper  # {B} to boom upper camera
-geometry_msgs/Pose T_BC_cabinupper # {B} to boom lower camera
+geometry_msgs/Pose T_OC_boomupper  # {B} to boom upper camera
+geometry_msgs/Pose T_OC_cabinupper # {B} to boom lower camera
 geometry_msgs/Pose T_cucl_cabin    # boom upper camera to boom lower camera
 geometry_msgs/Pose T_cucl_boom     # cabin upper camera to cabin lower camera
 geometry_msgs/Pose T_cl_cabin      # cabin upper camera to cabin lidar
