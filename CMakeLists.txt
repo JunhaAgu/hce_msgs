@@ -20,8 +20,9 @@ find_package(catkin REQUIRED COMPONENTS
   message_filters
   image_transport
 
-  excavator_msgs
-  vision_msgs
+  apriltag_ros
+  # excavator_msgs
+  # vision_msgs
 )
 
 #messages
@@ -47,6 +48,7 @@ add_service_files(
   CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
   CallReconstructor.srv
   CallDumpDetector.srv
+  HceSingleImage.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -55,12 +57,13 @@ generate_messages(
   std_msgs
   sensor_msgs
 
-  excavator_msgs
-  vision_msgs
+  apriltag_ros
+  # excavator_msgs
+  # vision_msgs
 )
 
 catkin_package(
   DEPENDS 
   #Eigen
-  CATKIN_DEPENDS message_runtime roscpp message_filters excavator_msgs vision_msgs
+  #CATKIN_DEPENDS message_runtime roscpp message_filters excavator_msgs vision_msgs
 )
