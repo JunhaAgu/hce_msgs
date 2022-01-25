@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(hce_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -48,7 +48,7 @@ add_service_files(
   CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
   CallReconstructor.srv
   CallDumpDetector.srv
-  HceSingleImage.srv
+  #HceSingleImage.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

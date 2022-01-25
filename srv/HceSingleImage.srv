@@ -1,4 +1,0 @@
-sensor_msgs/Image img0
----
-bool success
-apriltag_ros/AprilTagDetectionArray tag_detections
