@@ -34,6 +34,7 @@ add_message_files(
    ExMeasure.msg
    ExPressure.msg
    ExAngle.msg
+   ExGps.msg
    ExVelocity.msg
    Predictions.msg
    StateInput.msg
