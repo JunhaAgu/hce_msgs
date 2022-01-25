@@ -17,6 +17,7 @@ excavator_msgs/ExcavatorConfiguration goal_configuration # for WAYPOINT tracking
 geometry_msgs/Point[] current_ground # 현재 지형형상 (2-D level map, from reconstructor) (0,0) 이 꼭 있어야 함. x 범위는 무조건 0~15 m 사이의 데이터가 다 있어야 함. 만약, 먼 데이터가 없으면 마지막으로 젤일 먼 데이터로 쭉 밀기 (수평이다)
 # 노드가 10 미만이었다. 그냥 1-D 궤적. (x,z) 의 벡터. x 기준으로 소팅되어있으면 좋다. 기준좌표계는 베이스 바닥.
 geometry_msgs/Point[] target_ground  # 목표 지형형상 (2-D level map, from HCE) (0,0)이 꼭 있어야 함. 노드 갯수는 달라도 상관 ㄴ. 적어도 됨. 현재 형상의 x 좌표랑 달라도 됨. 그냥 1-D 궤적. 그냥 1-D 궤적. (x,z) 의 벡터. x 기준으로 소팅되어있으면 좋다. 기준좌표계는 베이스 바닥.
+float32 target_psi_U # 굴착 할 때, 스윙 각을 어떻게 고정시켜두고 할지.
 
 float32 tolerance # 0.5 m, variable . 
 #목표지형형상까지 얼마나 접근해야하는지 (이건 걍 하드코딩할듯???)
