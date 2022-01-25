@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 2.8.3)
 project(hce_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -20,7 +20,6 @@ find_package(catkin REQUIRED COMPONENTS
   message_filters
   image_transport
 
-  apriltag_ros
   excavator_msgs
   vision_msgs
 )
@@ -35,20 +34,23 @@ add_message_files(
    ExMeasure.msg
    ExPressure.msg
    ExAngle.msg
+   ExGps.msg
    ExVelocity.msg
    Predictions.msg
    StateInput.msg
    DataCamlidarStamped.msg
+   DataLidar.msg
    DataToReconstructor.msg
+   Data3dmap.msg
 )
 
 #services
 add_service_files(
   FILES
-  CamlidarStamped.srv # to get lidar-image data from 'hce_camlidar' module
-  CallReconstructor.srv
-  CallDumpDetector.srv
-  #HceSingleImage.srv
+  CallCamlidar.srv # to get lidar-image data from 'hce_camlidar' module
+  CallReconstructor.srv # to reconstructor
+  CallDumpDetector.srv # to dump detector
+  CallGlobalPlanner.srv # to global planner
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -56,8 +58,7 @@ generate_messages(
   DEPENDENCIES
   std_msgs
   sensor_msgs
-
-  apriltag_ros
+  
   excavator_msgs
   vision_msgs
 )
