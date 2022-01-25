@@ -28,5 +28,5 @@ bool success
 # Response of 'MODE_TRANSMIT'
 uint32 index_recon
 
-# Response of 'MODE_ORDER_X' 
-# 3-D point maps
+# Response of 'MODE_ORDER_{SINGLEVIEW, MULTIVIEW, SINGLELIDAR}' 
+hce_msgs/Data3dmap map # 3-D point maps

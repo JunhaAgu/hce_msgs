@@ -1,7 +1,16 @@
 # Request
 Header header
-sensor_msgs/Image img0 # boom upper camera
-sensor_msgs/Image img1 # boom lower camera
+sensor_msgs/Image img0 # boom upper camera (undistorted)
+sensor_msgs/Image img1 # boom lower camera (undistorted)
+float32 fx
+float32 fy
+float32 cx
+float32 cy
+
+float32 dist_k1
+float32 dist_k2
+float32 dist_p1
+float32 dist_p2
 
 ---
 # Response

@@ -1,0 +1,9 @@
+Header header
+uint8 MODE_TEST=0
+uint8 MODE_SNAPSHOT=1
+uint8 mode
+
+---
+Header header
+DataCamlidarStamped data
+bool success
