@@ -21,8 +21,8 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
 
   apriltag_ros
-  # excavator_msgs
-  # vision_msgs
+  excavator_msgs
+  vision_msgs
 )
 
 #messages
@@ -58,12 +58,12 @@ generate_messages(
   sensor_msgs
 
   apriltag_ros
-  # excavator_msgs
-  # vision_msgs
+  excavator_msgs
+  vision_msgs
 )
 
 catkin_package(
   DEPENDS 
   #Eigen
-  #CATKIN_DEPENDS message_runtime roscpp message_filters excavator_msgs vision_msgs
+  CATKIN_DEPENDS message_runtime roscpp message_filters excavator_msgs vision_msgs
 )
