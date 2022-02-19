@@ -52,6 +52,7 @@ add_service_files(
   CallDumpDetector.srv # to dump detector
   CallGlobalPlanner.srv # to global planner
   CallGridmapshow.srv # to gridmapshow
+  CallBluecougar.srv # to hce_bluecougar (from hce_camlidar)
 )
 
 ## Generate added messages and services with any dependencies listed here
