@@ -1,6 +1,7 @@
 Header header
 uint8 MODE_STANDBY=0
 uint8 MODE_SET_EXPOSURE=1
+uint8 MODE_REQUEST_SINGLE=2
 uint8 mode
 uint32 exposure_us_desired
 
