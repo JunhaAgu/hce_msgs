@@ -53,6 +53,7 @@ add_service_files(
   CallGlobalPlanner.srv # to global planner
   CallGridmapshow.srv # to gridmapshow
   CallBluecougar.srv # to hce_bluecougar (from hce_camlidar)
+  CallLocalPlanner.srv # to local_planner
 )
 
 ## Generate added messages and services with any dependencies listed here
