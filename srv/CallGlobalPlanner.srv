@@ -5,7 +5,11 @@ Header header # 언제 기준으로 플래닝을 시작 할 지. (움직이기 �
 uint8 MODE_STANDBY=0
 uint8 MODE_EXCAVATION=1
 uint8 MODE_WAYPOINT=2 # 
+uint8 MODE_TIP_GRADING=3
 uint8 mode
+
+# tipgrading시 사용할 bucket과 지면 사이 각
+float32 theta
 
 # For 'MODE_WAYPOINT' : goal_config + obstacles
 #excavator_msgs/ExcavatorConfigurationL initial_configuration # cylinder length {L} 좌표계
