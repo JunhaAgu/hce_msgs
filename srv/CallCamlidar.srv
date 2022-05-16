@@ -2,9 +2,11 @@ Header header
 uint8 MODE_TEST=0
 uint8 MODE_SNAPSHOT=1
 uint8 MODE_SAVE_SNAPSHOT=2
+uint8 MODE_EXPOSURE_CONTROL=3
 uint8 mode
 
 ---
 Header header
 DataCamlidarStamped data
+float32 exposure_us
 bool success

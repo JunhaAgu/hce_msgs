@@ -1,0 +1,18 @@
+# Request from GCS to Gridmapshow
+Header header
+uint8 MODE_STANDBY=0
+uint8 MODE_ORDER_SINGLELINE=1 
+uint8 mode # above modes
+
+float32 psi_U_to_look 
+
+---
+# Response from Gridmapshow to GCS
+Header header
+bool success
+
+# Response of 'MODE_STANDBY'
+# none
+
+# Response of 'MODE_ORDER_SINGLELINE'
+geometry_msgs/Point[] current_profile # profile of terrain along the psi_U_to_look direction. 
