@@ -1,0 +1,11 @@
+Header header
+uint8 MODE_STANDBY=0
+uint8 MODE_RESET=1
+uint8 MODE_ON=2
+uint8 MODE_OFF=3 # 
+uint8 mode
+
+---
+# Response
+Header header # stamp 에 pose 가 시작하는 시점을 넣어서 줄 것 (Inkyu)
+bool success # 성공 ? 실패 ? true: 성공
